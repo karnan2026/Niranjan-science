@@ -1,0 +1,8 @@
+<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a real-world scenario">
+  <rect width="300" height="220" rx="14" fill="#EAF1FF"/>
+  
+  <rect x="30" y="20" width="240" height="180" rx="10" fill="#FFFFFF" stroke="#B9C6E8" stroke-width="4"/>
+  <path d="M170 40 Q130 60 170 90 Q210 120 170 150 Q140 170 170 190" stroke="#00B4D8" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <circle cx="90" cy="60" r="10" fill="#F3C89E"/>
+
+</svg>
