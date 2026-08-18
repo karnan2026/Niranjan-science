@@ -6,7 +6,7 @@
    Images and any other assets are cached the first time they're
    actually viewed (runtime caching), so a first install stays fast.
 ===================================================================== */
-const CACHE_VERSION = 'nlh-cache-2026-08-17';
+const CACHE_VERSION = 'nlh-cache-2026-08-18';
 const APP_SHELL = [
   "./",
   "index.html",
