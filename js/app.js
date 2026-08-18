@@ -269,8 +269,26 @@ function recordAttempt(chapter, subj, sectionKey, q) {
    QUIZ ENGINE — generically drives Test / Picture Questions / Real-Life
    tabs from whichever array (mcqs / imageQuestions / scenarios) is passed.
 ======================================================================= */
+function shuffleArray(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+// Returns a NEW question object with its options in a random order for this
+// attempt — the original chapter data (and its correctIndex) is never
+// mutated, so re-shuffling happens fresh every time a quiz starts or restarts.
+function shuffleQuestionOptions(item) {
+  const order = shuffleArray(item.options.map((_, i) => i));
+  const options = order.map((i) => item.options[i]);
+  const correctIndex = order.indexOf(item.correctIndex);
+  return { ...item, options, correctIndex };
+}
 function makeQuizState(items) {
-  return { items, i: 0, answered: null, correctCount: 0, done: false, answers: new Array(items.length).fill(null) };
+  const shuffled = items.map(shuffleQuestionOptions);
+  return { items: shuffled, i: 0, answered: null, correctCount: 0, done: false, answers: new Array(shuffled.length).fill(null) };
 }
 
 function renderQuizTab(chapter, key, opts) {
