@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<rect width="400" height="300" fill="#EAF4FF" rx="16"/>
+<rect x="45" y="90" width="60" height="90" rx="12" fill="#B14AED"/>
+<text x="75" y="145" font-size="38" font-weight="800" fill="#fff" text-anchor="middle" font-family="Arial">5</text>
+<text x="75" y="205" font-size="18" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">Th</text>
+<rect x="125" y="90" width="60" height="90" rx="12" fill="#06D6A0"/>
+<text x="155" y="145" font-size="38" font-weight="800" fill="#fff" text-anchor="middle" font-family="Arial">0</text>
+<text x="155" y="205" font-size="18" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">H</text>
+<rect x="205" y="90" width="60" height="90" rx="12" fill="#FFC300"/>
+<text x="235" y="145" font-size="38" font-weight="800" fill="#fff" text-anchor="middle" font-family="Arial">8</text>
+<text x="235" y="205" font-size="18" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">T</text>
+<rect x="285" y="90" width="60" height="90" rx="12" fill="#FF4D6D"/>
+<text x="315" y="145" font-size="38" font-weight="800" fill="#fff" text-anchor="middle" font-family="Arial">1</text>
+<text x="315" y="205" font-size="18" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">O</text>
+</svg>
