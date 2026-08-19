@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
-<rect width="400" height="300" fill="#EAF4FF" rx="16"/>
-<rect x="93" y="102" width="60" height="138" rx="8" fill="#FFC300"/>
-<text x="123" y="94" font-size="16" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">3</text>
-<text x="123" y="260" font-size="14" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">Autorickshaw</text>
-<rect x="247" y="60" width="60" height="180" rx="8" fill="#4361EE"/>
-<text x="277" y="52" font-size="16" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">4</text>
-<text x="277" y="260" font-size="14" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">Car</text>
-</svg>

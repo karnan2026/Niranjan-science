@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
-<rect width="400" height="300" fill="#EAF4FF" rx="16"/>
-<circle cx="200" cy="110" r="70" fill="#FFC30022"/>
-<text x="200" y="140" font-size="80" text-anchor="middle" font-family="Arial">🚌</text>
-<text x="200" y="220" font-size="26" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">Minibus</text>
-<rect x="130" y="235" width="140" height="40" rx="20" fill="#FFC300"/>
-<text x="200" y="262" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" font-family="Arial">Carries 25</text>
-</svg>
