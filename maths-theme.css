@@ -1,0 +1,94 @@
+/* =====================================================================
+   MATHS THEME — QuizQuest's colourful game look, scoped to
+   body.theme-maths only. Every other subject is completely unaffected;
+   this file never touches an unscoped selector.
+===================================================================== */
+
+body.theme-maths{
+  --m-bg-top: #fff9ec;
+  --m-bg-bottom: #eaf6ff;
+  --m-ink: #2b2140;
+  --m-ink-soft: #6b5c82;
+  --m-math: #ff7a59;
+  --m-math-dark: #e85f3d;
+  --m-star: #ffd23f;
+  --m-streak: #ff8a3d;
+  background: linear-gradient(180deg, var(--m-bg-top), var(--m-bg-bottom)) !important;
+}
+
+/* ---- Header accents while inside Maths ---- */
+body.theme-maths .crumb{ color: var(--m-math-dark) !important; }
+body.theme-maths .subject-icon-lg{ border-color: var(--m-math) !important; }
+
+/* ---- Buttons re-themed to QuizQuest's coral/orange gradient ---- */
+body.theme-maths .btn-primary{ background: linear-gradient(135deg, var(--m-math), var(--m-star)) !important; }
+body.theme-maths .btn-warn{ background: linear-gradient(135deg, var(--m-streak), var(--m-math)) !important; color:#fff !important; }
+body.theme-maths .hub-tab[aria-selected="true"]{ background: linear-gradient(135deg, var(--m-math), var(--m-star)) !important; color:#fff !important; }
+body.theme-maths .progress-bar-fill{ background: linear-gradient(90deg, var(--m-math), var(--m-star)) !important; }
+body.theme-maths .quiz-card{ border-color: var(--m-star) !important; }
+body.theme-maths .notes-block{ border-left-color: var(--m-math) !important; }
+body.theme-maths .flash-front{ background: linear-gradient(135deg, var(--m-math), var(--m-streak) 60%, var(--m-star)) !important; }
+body.theme-maths .flash-back{ border-color: var(--m-math) !important; }
+
+/* ---- Chapter stones get a playful coral accent ---- */
+body.theme-maths .chapter-stone .num{ background: linear-gradient(135deg, var(--m-math), var(--m-star)) !important; }
+
+/* ---- Mascot hero block ---- */
+.maths-hero{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  background:#fff; border-radius:24px; padding:18px 22px; margin-bottom:18px;
+  box-shadow: 0 10px 24px rgba(43,33,64,0.12);
+}
+.maths-eyebrow{ font-family:'Baloo 2'; font-weight:800; font-size:1.05rem; color: var(--m-ink, #2b2140); margin:0; }
+.maths-mascot-wrap{ position:relative; flex-shrink:0; }
+.maths-mascot{
+  width:64px; height:64px; border-radius:50%; border:none; cursor:pointer;
+  background: radial-gradient(circle at 35% 30%, #fff2c4, var(--m-star, #ffd23f));
+  box-shadow: 0 8px 18px rgba(255,210,63,.5);
+  display:flex; align-items:center; justify-content:center;
+}
+.maths-mascot:hover{ transform: scale(1.06); }
+.maths-mascot.wiggle{ animation: mathsWiggle .5s ease; }
+@keyframes mathsWiggle{ 0%,100%{ transform:rotate(0);} 25%{ transform:rotate(-10deg);} 75%{ transform:rotate(10deg);} }
+.maths-mascot-star{ position:relative; width:34px; height:34px; }
+.maths-eye{ position:absolute; top:10px; width:6px; height:6px; border-radius:50%; background:#2b2140; }
+.maths-eye-left{ left:6px; } .maths-eye-right{ right:6px; }
+.maths-mouth{ position:absolute; bottom:6px; left:50%; transform:translateX(-50%); width:14px; height:7px; border-bottom:3px solid #2b2140; border-radius:0 0 12px 12px; }
+.maths-speech-bubble{
+  position:absolute; bottom:76px; right:-10px; background:#fff; color:#2b2140;
+  padding:8px 12px; border-radius:14px; font-size:.82rem; font-weight:700;
+  box-shadow:0 6px 16px rgba(43,33,64,.18); white-space:nowrap; opacity:0; transform:translateY(6px);
+  transition:opacity .25s, transform .25s; pointer-events:none;
+}
+.maths-speech-bubble.show{ opacity:1; transform:translateY(0); }
+
+/* ---- XP / stats pill ---- */
+.maths-stats-pill{ display:inline-flex; gap:10px; background:#fff; border-radius:999px; padding:8px 16px; box-shadow:0 6px 16px rgba(43,33,64,.12); margin-bottom:14px; }
+.maths-stat{ font-family:'Baloo 2'; font-weight:800; font-size:.92rem; color:#2b2140; display:flex; align-items:center; gap:5px; }
+.maths-stat-icon{ font-size:1.05rem; }
+
+/* ---- Badges shelf ---- */
+.maths-badges-shelf{ margin: 10px 0 18px; }
+.maths-badges-title{ font-family:'Baloo 2'; font-weight:800; font-size:.88rem; color:#6b5c82; margin-bottom:8px; }
+.maths-badges-list{ display:flex; flex-wrap:wrap; gap:8px; }
+.maths-badge-chip{
+  background: linear-gradient(135deg, #fff2c4, #ffd23f); border-radius:999px; padding:6px 14px;
+  font-family:'Baloo 2'; font-weight:800; font-size:.82rem; color:#5c3600; box-shadow:0 4px 10px rgba(255,210,63,.35);
+}
+
+/* ---- Confetti (spawned inside the quiz card on a correct answer) ---- */
+.maths-confetti-layer{ position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:5; }
+.maths-confetti-piece{
+  position:absolute; top:-10px; width:9px; height:14px; opacity:.9;
+  animation: mathsConfettiFall 1.6s ease-in forwards;
+}
+@keyframes mathsConfettiFall{
+  to{ transform: translateY(320px) rotate(360deg); opacity:0; }
+}
+body.theme-maths .quiz-card{ position:relative; overflow:hidden; }
+
+/* ---- Badge unlock celebration on the score panel ---- */
+.maths-badge-celebration{
+  background: linear-gradient(135deg, #fff2c4, #ffe4db); border-radius:18px; padding:14px 18px; margin:14px 0;
+  font-family:'Baloo 2'; font-weight:800; color:#5c3600;
+}

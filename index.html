@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Niranjan Learning Hub</title>
+<meta name="description" content="A friendly place to learn, practice and play — built for Class 5 explorers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/maths-theme.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4361EE">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Niranjan Hub">
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <button id="backBtn" class="back-btn" aria-label="Go back" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="brand" id="homeLink">
+    <span class="brand-mark">🚀</span>
+    <span class="brand-name">Niranjan <span>Learning Hub</span></span>
+  </div>
+  <div class="topbar-spacer"></div>
+</header>
+
+<main id="app">
+
+  <!-- ============ VIEW 1: HOME — pick a subject ============ -->
+  <section id="view-home" class="view">
+    <div class="hero">
+      <h1>What shall we explore today?</h1>
+      <p>Pick a subject, choose a chapter, and let's get learning!</p>
+    </div>
+    <div id="subjectGrid" class="subject-grid"></div>
+  </section>
+
+  <!-- ============ VIEW 2: CHAPTER LIST for a subject ============ -->
+  <section id="view-chapters" class="view" hidden>
+    <div class="section-heading">
+      <span id="subjectIcon" class="subject-icon-lg"></span>
+      <div>
+        <h2 id="subjectTitle"></h2>
+        <p id="subjectSub" class="muted"></p>
+      </div>
+    </div>
+    <div id="chapterTrail" class="chapter-trail"></div>
+  </section>
+
+  <!-- ============ VIEW 3: CHAPTER HUB (notes / test / flashcards / etc) ============ -->
+  <section id="view-hub" class="view" hidden>
+    <div class="section-heading">
+      <div>
+        <p id="hubCrumb" class="muted crumb"></p>
+        <h2 id="hubTitle"></h2>
+      </div>
+    </div>
+
+    <nav id="hubTabs" class="hub-tabs" role="tablist" aria-label="Chapter sections"></nav>
+
+    <div id="hubPanel" class="hub-panel"></div>
+  </section>
+
+  <!-- ============ VIEW 4: PARENT DASHBOARD ============ -->
+  <section id="view-dashboard" class="view" hidden>
+    <div class="section-heading">
+      <span class="subject-icon-lg">👪</span>
+      <div>
+        <h2>Parent Dashboard</h2>
+        <p class="muted">Niranjan's learning activity on this device</p>
+      </div>
+    </div>
+    <div id="dashboardGate"></div>
+    <div id="dashboardContent" hidden></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Made with 💙 for curious Class 5 learners.</p>
+  <button id="parentDashLink" class="footer-link">👪 Parent Dashboard</button>
+</footer>
+
+<script src="js/data/subjects.js"></script>
+<script src="js/data/chapter-schema.js"></script>
+<!-- Chapter content files are added here, one <script> per chapter, once content is ready. -->
+<script src="js/data/chapters/science-skeletal-muscular-systems.js"></script>
+<script src="js/data/chapters/science-good-health.js"></script>
+<script src="js/data/chapters/social-continents-oceans.js"></script>
+<script src="js/data/chapters/maths-we-the-travellers-1.js"></script>
+<script src="js/maths-game.js"></script>
+<script src="js/app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => {
+        /* offline install just won't be available — the site still works normally online */
+      });
+    });
+  }
+</script>
+</body>
+</html>
