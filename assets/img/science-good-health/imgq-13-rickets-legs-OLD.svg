@@ -1,0 +1,9 @@
+<svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Original educational illustration">
+  <rect width="300" height="260" rx="14" fill="#EAF1FF"/>
+  
+  <circle cx="150" cy="60" r="26" fill="#F3C89E"/>
+  <rect x="128" y="84" width="44" height="60" rx="14" fill="#4C6FFF"/>
+  <path d="M136 144 q-18 40 -6 76" stroke="#F3C89E" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M164 144 q18 40 6 76" stroke="#F3C89E" stroke-width="16" fill="none" stroke-linecap="round"/>
+
+</svg>

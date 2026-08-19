@@ -1,0 +1,9 @@
+<svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Original educational illustration">
+  <rect width="300" height="260" rx="14" fill="#EAF1FF"/>
+  
+  <circle cx="150" cy="70" r="30" fill="#F3C89E"/>
+  <path d="M125 95 q25 45 0 70 q25 15 50 0 q-25 -25 0 -70 z" fill="#F3C89E"/>
+  <ellipse cx="150" cy="150" rx="26" ry="18" fill="#E8A97E"/>
+  <rect x="110" y="188" width="80" height="60" rx="16" fill="#4C6FFF"/>
+
+</svg>

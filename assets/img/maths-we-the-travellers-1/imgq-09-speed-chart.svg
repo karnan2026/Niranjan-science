@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<rect width="400" height="300" fill="#EAF4FF" rx="16"/>
+<rect x="32" y="219" width="60" height="21" rx="8" fill="#FF4D6D"/>
+<text x="62" y="211" font-size="16" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">60 km/h</text>
+<text x="62" y="260" font-size="14" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">Motorbike</text>
+<rect x="124" y="222" width="60" height="18" rx="8" fill="#3EA8FF"/>
+<text x="154" y="214" font-size="16" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">45 km/h</text>
+<text x="154" y="260" font-size="14" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">Ship</text>
+<rect x="216" y="200" width="60" height="40" rx="8" fill="#06D6A0"/>
+<text x="246" y="192" font-size="16" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">160 km/h</text>
+<text x="246" y="260" font-size="14" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">Train</text>
+<rect x="308" y="60" width="60" height="180" rx="8" fill="#B14AED"/>
+<text x="338" y="52" font-size="16" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">920 km/h</text>
+<text x="338" y="260" font-size="14" fill="#241F42" text-anchor="middle" font-family="Arial" font-weight="700">Aircraft</text>
+</svg>

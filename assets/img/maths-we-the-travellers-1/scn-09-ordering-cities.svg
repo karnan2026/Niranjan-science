@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<rect width="400" height="300" fill="#EAF4FF" rx="16"/>
+<text x="200" y="110" font-size="18" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">City Populations</text><rect x="60" y="130" width="280" height="30" rx="8" fill="#4361EE22"/><text x="200" y="151" font-size="15" text-anchor="middle" font-family="Arial">A: 12,340</text><rect x="60" y="165" width="280" height="30" rx="8" fill="#06D6A022"/><text x="200" y="186" font-size="15" text-anchor="middle" font-family="Arial">B: 8,760</text><rect x="60" y="200" width="280" height="30" rx="8" fill="#FFC30022"/><text x="200" y="221" font-size="15" text-anchor="middle" font-family="Arial">C: 21,050</text>
+</svg>

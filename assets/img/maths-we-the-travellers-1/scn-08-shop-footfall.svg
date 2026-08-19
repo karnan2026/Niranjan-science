@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<rect width="400" height="300" fill="#EAF4FF" rx="16"/>
+<text x="200" y="120" font-size="40" text-anchor="middle" font-family="Arial">🔢</text><text x="200" y="170" font-size="22" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">4,586 people</text><text x="200" y="200" font-size="16" fill="#6B6390" text-anchor="middle" font-family="Arial">rounded to the nearest ten</text>
+</svg>

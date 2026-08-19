@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<rect width="400" height="300" fill="#EAF4FF" rx="16"/>
+<rect x="40" y="120" width="90" height="55" rx="8" fill="#06D6A0" stroke="#241F42" stroke-width="2"/>
+<rect x="54" y="118" width="90" height="55" rx="8" fill="#06D6A0" stroke="#241F42" stroke-width="2"/>
+<rect x="68" y="116" width="90" height="55" rx="8" fill="#06D6A0" stroke="#241F42" stroke-width="2"/>
+<text x="85" y="149" font-size="16" font-weight="800" fill="#241F42" text-anchor="middle" font-family="Arial">Rs.500</text>
+</svg>
